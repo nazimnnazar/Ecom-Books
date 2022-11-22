@@ -22,3 +22,16 @@ A Full Stack Web created using Python & Django with full E-Commerce Functionalit
 - Login / Register
 - Contact 
 - Profile
+- Paginator
+
+
+## Home
+![Screenshot (254)](https://user-images.githubusercontent.com/112808009/203258812-9eda11f0-aeb4-4d8d-8c8c-6e4b2ff0075b.png)
+## Books Shop
+![Screenshot (255)](https://user-images.githubusercontent.com/112808009/203258844-91718246-65a1-4b42-8d41-fcf49d953d6b.png)
+## Paginator
+![Screenshot (256)](https://user-images.githubusercontent.com/112808009/203258866-7930e1c1-0c8c-4479-9c5c-f6dc5af51148.png)
+## cart
+![Screenshot (257)](https://user-images.githubusercontent.com/112808009/203258985-55d0a21a-a991-47a2-a0a2-5005b8f14849.png)
+##  cart checkout
+![Screenshot (258)](https://user-images.githubusercontent.com/112808009/203259006-792d9612-08ef-4361-8700-e3cd6d791f6e.png)
