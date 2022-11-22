@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% block title %}Home | {% endblock %}
+{% block content %}
+{% load static %}
+
+<section class="blog-section spad">
+	<div class="section-title">
+		<h2>pemium Books</h2>
+		<p>We recommend</p>
+	</div><br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="featured-item">
+					<img src="{% static 'codeblue/img/featured/na3.jpg' %}" alt="">
+					<a href="{% url 'product' %}" class="site-btn">see more</a>
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<h4 class="bgs-title">from the Book</h4>
+				<div class="blog-item">
+					<div class="bi-thumb">
+						<img src="{% static 'codeblue/img/blog-thumb/na1.jpg' %}" alt="">
+					</div>
+					<div class="bi-content">
+						<h5>10 tips Books</h5>
+						<div class="bi-meta">July 02, 2018   |   By maria deloreen</div>
+						<a href="{% url 'product' %}" class="readmore">Read More</a>
+					</div>
+				</div>
+				<div class="blog-item">
+					<div class="bi-thumb">
+						<img src="{% static 'codeblue/img/blog-thumb/na2.jpg' %}" alt="">
+					</div>
+					<div class="bi-content">
+						<h5>Fashion Outlet</h5>
+						<div class="bi-meta">July 02, 2018   |   By Smith</div>
+						<a href="{% url 'product' %}" class="readmore">Read More</a>
+					</div>
+				</div>
+				<div class="blog-item">
+					<div class="bi-thumb">
+						<img src="{% static 'codeblue/img/blog-thumb/an1.jpg' %}" alt="">
+					</div>
+					<div class="bi-content">
+						<h5>the little black </h5>
+						<div class="bi-meta">July 02, 2018   |   By  deloreen</div>
+						<a href="{% url 'product' %}" class="readmore">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="featured-section spad">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="featured-item">
+					<img src="{% static 'codeblue/img/featured/na1.jpg' %}" alt="">
+					<a href="{% url 'product' %}" class="site-btn">see more</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="featured-item mb-0">
+					<img src="{% static 'codeblue/img/featured/na2.jpg' %}" alt="">
+					<a href="{% url 'product' %}" class="site-btn">see more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<section class="intro-section spad pb-0">
+		<div class="section-title">
+			<h2>pemium Books</h2>
+			<p>We recommend</p>
+		</div>
+		<div class="intro-slider">
+			<ul class="slidee">
+				<li>
+					<div class="intro-item">
+						<figure>
+							<img src="{% static 'codeblue/img/intro/na7.jpg' %}" alt="#">
+						</figure>
+						<div class="product-info">
+							<h5>Pink Sunglasses</h5>
+							<p>&#x20B9;319.50</p>
+							<a href="#" class="site-btn btn-line">ADD TO CART</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="intro-item">
+						<figure>
+							<img src="{% static 'codeblue/img/intro/na6.jpg' %}" alt="#">
+						</figure>
+						<div class="product-info">
+							<h5>Black Nighty</h5>
+							<p>&#x20B9;319.50</p>
+							<a href="#" class="site-btn btn-line">ADD TO CART</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="intro-item">
+						<figure>
+							<img src="{% static 'codeblue/img/intro/na3.jpg' %}" alt="#">
+							<div class="bache">NEW</div>
+						</figure>
+						<div class="product-info">
+							<h5>Yellow Sholder bag</h5>
+							<p>&#x20B9;319.50</p>
+							<a href="#" class="site-btn btn-line">ADD TO CART</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="intro-item">
+						<figure>
+							<img src="{% static 'codeblue/img/intro/na4.jpg' %}" alt="#">
+						</figure>
+						<div class="product-info">
+							<h5>Yellow Sunglasses</h5>
+							<p>&#x20B9;319.50</p>
+							<a href="#" class="site-btn btn-line">ADD TO CART</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="intro-item">
+						<figure>
+							<img src="{% static 'codeblue/img/intro/na5.jpg' %}" alt="#">
+						</figure>
+						<div class="product-info">
+							<h5>Black Sholder bag</h5>
+							<p>&#x20B9;319.50</p>
+							<a href="#" class="site-btn btn-line">ADD TO CART</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="scrollbar">
+				<div class="handle">
+					<div class="mousearea"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+{% endblock %}

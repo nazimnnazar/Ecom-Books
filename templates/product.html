@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}Shop | {% endblock %}
+{% block content %}
+{% load static %}
+<section class="product-section spad">
+  
+ 
+        <ul class="product-filter controls">
+          
+            {% for i in ct %}
+            <a href="{{i.get_url}}">
+            <li class="control" data-filter="all">{{i.name}}/</li></a>
+            {% endfor %}
+        </ul>
+        <div class="row" id="product-filter">
+            {% for i in product %}
+            <div class="mix col-lg-3 col-md-6 best">
+                <div class="product-item">
+                    <a class="imgover" href="{{i.get_url}}">
+                    <figure>
+                        
+                        <img src="{{i.img.url}}" alt="">
+                       
+                        <div class="pi-meta">
+                            <div class="pi-m-left">
+                                <img src="{% static 'codeblue/img/icons/eye.png' %}" alt="">
+                               <p>quick view</p>
+                            </div>
+                            <div class="pi-m-right">
+                                <img src="{% static 'codeblue/img/icons/heart.png' %}" alt="">
+                                <p>save</p>
+                            </div>
+                        </div>
+                    </figure>
+                </a>
+                    <div class="product-info">
+                        <h6>{{i.name}}</h6>
+                        <p>&#x20B9;{{i.price}}</p>
+                        <a href="#" class="site-btn btn-line">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+    {% if product.has_previous %}
+    <a href="?page1">&laquo; First</a>
+    <a href="?page={{product.parevious_page_number}}">Previous</a>
+    {% endif %}
+    Page {{product.number}} of {{product.paginator.num_pages}}
+    {% if product.has_next %}
+    <a href="?page={{product.next_page_number}}">Next</a>
+    <a href="?page={{product.paginator.num_pages}}">Last&raquo;</a>
+    {% endif %}
+</section>
+
+{% endblock %}

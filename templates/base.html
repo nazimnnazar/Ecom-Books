@@ -1,0 +1,130 @@
+{% load static %}
+<html>
+<head>
+<title>{% block title %}{% endblock %}Book World</title>
+<meta charset="UTF-8">
+<meta name="description" content="The Plaza eCommerce Template">
+<meta name="keywords" content="plaza, eCommerce, creative, html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{% static 'codeblue/img/favicon.ico" rel="shortcut icon"/>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'codeblue/css/bootstrap.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'codeblue/css/font-awesome.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'codeblue/css/owl.carousel.css' %}"/>
+<link rel="stylesheet" href="{% static 'codeblue/css/style.css' %}"/>
+<link rel="stylesheet" href="{% static 'codeblue/css/animate.css' %}"/>
+
+
+<div id="preloder"><div class="loader"></div></div>
+<header class="header-section header-normal">
+    <div class="container-fluid">
+        <div class="nav-switch"><i class="fa fa-bars"></i></div>
+        <div class="header-right">
+            <a href="{% url 'Cart_Deta_il' %}" class="card-bag"><img src="{% static 'codeblue/img/icons/bag.png' %}" alt=""><span>2</span></a>
+            <a href="#" class="search"><img src="{% static 'codeblue/img/icons/search.png' %}" alt=""></a>
+        </div>
+        <ul class="main-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="{% url 'product' %}">Books</a></li>
+            <!-- <li><a href="/">Shop</a></li>
+        
+            <li><a href="#">Blog</a></li> -->
+            <!-- <li><a href="{% url 'Cart_Deta_il' %}">Contact</a></li> -->
+        </ul>
+    </div>
+</header>
+{% block content %}{% endblock %}
+<script src="{% static 'codeblue/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'codeblue/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'codeblue/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'codeblue/js/mixitup.min.js' %}"></script>
+<script src="{% static 'codeblue/js/sly.min.js' %}"></script>
+<script src="{% static 'codeblue/js/jquery.nicescroll.min.js' %}"></script>
+<script src="{% static 'codeblue/js/main.js' %}"></script>
+
+
+    <section class="footer-top-section home-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-8 col-sm-12">
+					<div class="footer-widget about-widget">
+						<!-- <img src="{% static 'codeblue/img/logo.png' %}" class="footer-logo" alt=""> -->
+						<p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam fringilla faucibus urna, id dapibus erat iaculis ut. Integer ac sem.</p>
+						<div class="cards">
+							<img src="{% static 'codeblue/img/cards/5.png' %}" alt="">
+							<img src="{% static 'codeblue/img/cards/4.png' %}" alt="">
+							<img src="{% static 'codeblue/img/cards/3.png' %}" alt="">
+							<img src="{% static 'codeblue/img/cards/2.png' %}" alt="">
+							<img src="{% static 'codeblue/img/cards/1.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">usefull Links</h6>
+						<ul>
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Bloggers</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Press</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">Sitemap</h6>
+						<ul>
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Bloggers</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Press</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">Shipping & returns</h6>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Track Orders</a></li>
+							<li><a href="#">Returns</a></li>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Shipping</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">Contact</h6>
+						<div class="text-box">
+							<!-- <p>Your Company Ltd</p>
+							<p>1481 Creekside Lane  Avila Beach, CA 93424, </p> -->
+							<p>91 9995718367</p>
+							<p>nazimnnazar123456@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer top section end -->	
+
+		<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<p class="copyright">
+          <script>document.write(new Date().getFullYear());</script> 
+Check my WebSite<i class="fa fa-heart-o" aria-hidden="true">
+</i> by <a href="http://nazimnnazar.pythonanywhere.com" target="_blank">Portfolio</a>
+
+</p>
+		</div>
+	</footer>
+
+    </body>
+</html>
+
+
