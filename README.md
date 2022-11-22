@@ -9,4 +9,16 @@
 <img src="https://img.shields.io/badge/Github-181717?logo=github&logoColor=white" />
 </p>
 
-A Full Stack Web created using Python & Django with full E-Commerce Functionality!.This site where everyone gets books for PERSONAL FINANCE,SELF MOTIVETED,STOCK MARKET,CODING 
+A Full Stack Web created using Python & Django with full E-Commerce Functionality!.This site where gets books for PERSONAL FINANCE,SELF MOTIVETED,STOCK MARKET,CODING 
+
+
+##  📚Features
+
+- Home 
+- Detail products
+- Product category
+- Recommended products
+- Cart
+- Login / Register
+- Contact 
+- Profile
