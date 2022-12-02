@@ -11,7 +11,6 @@
 
 A Full Stack Web created using Python & Django with full E-Commerce Functionality!.This site where gets books for PERSONAL FINANCE,SELF MOTIVETED,STOCK MARKET,CODING 
 
-
 ##  📚Features
 
 - Home 
